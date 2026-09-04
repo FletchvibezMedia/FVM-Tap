@@ -17,6 +17,21 @@ export type ClientProfile = {
 };
 
 export const clients: Record<string, ClientProfile> = {
+  "detail-masters": {
+    slug: "detail-masters",
+    businessName: "Detail Masters",
+    eyebrow: "Your vehicle received the master treatment",
+    headline: "How did we do?",
+    message: "Your feedback helps our local team grow and helps other drivers choose an Orlando detailer they can trust.",
+    logo: "/assets/detail-masters.png",
+    logoAlt: "Detail Masters logo",
+    colors: { primary: "#ed1c24", secondary: "#a80910", glow: "237, 28, 36", surface: "#000000" },
+    reviewUrl: "#demo",
+    website: "https://www.detailmastersfla.com",
+    phone: "+14078640237",
+    location: "185 S Semoran Blvd · Orlando, Florida",
+    demo: true
+  },
   aquaflow: {
     slug: "aquaflow",
     businessName: "AquaFlow Water Solutions",
