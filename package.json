@@ -1,0 +1,14 @@
+{
+  "name": "fvm-tap",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "check": "node scripts/validate.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.92.0"
+  }
+}
