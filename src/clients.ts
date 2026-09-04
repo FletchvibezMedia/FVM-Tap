@@ -20,9 +20,9 @@ export const clients: Record<string, ClientProfile> = {
   "detail-masters": {
     slug: "detail-masters",
     businessName: "Detail Masters",
-    eyebrow: "Your vehicle received the master treatment",
-    headline: "How did we do?",
-    message: "Your feedback helps our local team grow and helps other drivers choose an Orlando detailer they can trust.",
+    eyebrow: "Thanks for trusting our team",
+    headline: "Love the result?",
+    message: "A quick review helps other Orlando drivers find detailing they can trust.",
     logo: "/assets/detail-masters.png",
     logoAlt: "Detail Masters logo",
     colors: { primary: "#ed1c24", secondary: "#a80910", glow: "237, 28, 36", surface: "#000000" },
