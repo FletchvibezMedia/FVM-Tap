@@ -1,4 +1,5 @@
 export type ClientProfile = {
+  kind?: "review" | "services";
   slug: string;
   businessName: string;
   eyebrow: string;
@@ -14,9 +15,30 @@ export type ClientProfile = {
   social?: string;
   socialLabel?: string;
   demo?: boolean;
+  pricingImage?: string;
+  technicians?: string[];
+  mapUrl?: string;
 };
 
 export const clients: Record<string, ClientProfile> = {
+  "detail-masters-mobile": {
+    kind: "services",
+    slug: "detail-masters-mobile",
+    businessName: "Detail Masters Mobile Detailing",
+    eyebrow: "Premium mobile detailing · We come to you",
+    headline: "Your detail team is on site.",
+    message: "View today’s pricing, contact the team or get directions to our Orlando shop.",
+    logo: "/assets/detail-masters.webp",
+    logoAlt: "Detail Masters logo",
+    colors: { primary: "#ed1c24", secondary: "#a80910", glow: "237, 28, 36", surface: "#000000" },
+    reviewUrl: "https://search.google.com/local/writereview?placeid=ChIJqZronx1l54gR-VfjfDZfE-s",
+    website: "https://www.detailmastersfla.com",
+    phone: "+14078640237",
+    location: "185 S Semoran Blvd · Orlando, Florida",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Detail+Masters%2C+185+S+Semoran+Blvd%2C+Orlando%2C+FL+32807",
+    pricingImage: "/assets/detail-masters-mobile-pricing.webp",
+    technicians: ["Eric", "Joshua"]
+  },
   "detail-masters": {
     slug: "detail-masters",
     businessName: "Detail Masters",
