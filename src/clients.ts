@@ -26,11 +26,10 @@ export const clients: Record<string, ClientProfile> = {
     logo: "/assets/detail-masters.png",
     logoAlt: "Detail Masters logo",
     colors: { primary: "#ed1c24", secondary: "#a80910", glow: "237, 28, 36", surface: "#000000" },
-    reviewUrl: "#demo",
+    reviewUrl: "https://search.google.com/local/writereview?placeid=ChIJqZronx1l54gR-VfjfDZfE-s",
     website: "https://www.detailmastersfla.com",
     phone: "+14078640237",
-    location: "185 S Semoran Blvd · Orlando, Florida",
-    demo: true
+    location: "185 S Semoran Blvd · Orlando, Florida"
   },
   aquaflow: {
     slug: "aquaflow",
