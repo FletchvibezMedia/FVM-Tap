@@ -1,5 +1,5 @@
 export type ClientProfile = {
-  kind?: "review" | "services";
+  kind?: "review" | "services" | "pricing";
   slug: string;
   businessName: string;
   eyebrow: string;
@@ -18,9 +18,27 @@ export type ClientProfile = {
   pricingImage?: string;
   technicians?: string[];
   mapUrl?: string;
+  email?: string;
 };
 
 export const clients: Record<string, ClientProfile> = {
+  "fvm-pricing": {
+    kind: "pricing",
+    slug: "fvm-pricing",
+    businessName: "FletchVibez Media",
+    eyebrow: "Branding · Websites · Smart Products · Creative Media",
+    headline: "Services & pricing",
+    message: "Straightforward starting points for the work that helps businesses look better, connect faster and stand out.",
+    logo: "",
+    logoAlt: "FletchVibez Media",
+    colors: { primary: "#14b8ff", secondary: "#0879bd", glow: "20, 184, 255", surface: "#000000" },
+    reviewUrl: "#",
+    website: "https://fletchvibezmedia.com",
+    phone: "+14075697939",
+    email: "Eric@FletchVibezMedia.com",
+    location: "Orlando, Florida",
+    pricingImage: "/assets/fvm-services-pricing.webp"
+  },
   "detail-masters-mobile": {
     kind: "services",
     slug: "detail-masters-mobile",
