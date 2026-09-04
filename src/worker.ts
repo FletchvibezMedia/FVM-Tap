@@ -31,8 +31,7 @@ export default {
     }
 
     const isAsset = path.includes(".") || path.startsWith("assets/");
-    const assetRequest = isAsset ? request : new Request(new URL("/index.html", url), request);
-    const response = await env.ASSETS.fetch(assetRequest);
+    const response = await env.ASSETS.fetch(request);
     const headers = new Headers(response.headers);
     Object.entries(securityHeaders).forEach(([key, value]) => headers.set(key, value));
     if (!isAsset) headers.set("cache-control", "no-cache");
