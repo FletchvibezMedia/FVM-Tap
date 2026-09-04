@@ -23,7 +23,7 @@ export const clients: Record<string, ClientProfile> = {
     eyebrow: "Thanks for trusting our team",
     headline: "Love the result?",
     message: "A quick review helps other Orlando drivers find detailing they can trust.",
-    logo: "/assets/detail-masters.png",
+    logo: "/assets/detail-masters.webp",
     logoAlt: "Detail Masters logo",
     colors: { primary: "#ed1c24", secondary: "#a80910", glow: "237, 28, 36", surface: "#000000" },
     reviewUrl: "https://search.google.com/local/writereview?placeid=ChIJqZronx1l54gR-VfjfDZfE-s",
