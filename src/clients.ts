@@ -1,5 +1,5 @@
 export type ClientProfile = {
-  kind?: "review" | "services" | "pricing";
+  kind?: "review" | "services" | "pricing" | "hub";
   slug: string;
   businessName: string;
   eyebrow: string;
@@ -19,9 +19,33 @@ export type ClientProfile = {
   technicians?: string[];
   mapUrl?: string;
   email?: string;
+  pricingUrl?: string;
+  socials?: { label: string; url: string; network: "instagram" | "tiktok" | "facebook" }[];
 };
 
 export const clients: Record<string, ClientProfile> = {
+  prozap: {
+    kind: "hub",
+    slug: "prozap",
+    businessName: "ProZap Mobile EV Charging",
+    eyebrow: "Mobile EV charging · Orlando, Florida",
+    headline: "Power when you need it.",
+    message: "Fast access to ProZap service, directions, reviews, pricing and social updates.",
+    logo: "/assets/prozap-logo.webp",
+    logoAlt: "ProZap Mobile EV Charging",
+    colors: { primary: "#c8ff00", secondary: "#76a900", glow: "200, 255, 0", surface: "#050705" },
+    reviewUrl: "https://www.google.com/search?q=ProZap+Mobile+EV+Charging+Orlando+reviews",
+    website: "https://prozapfl.com",
+    phone: "+14076862539",
+    location: "LB McLeod Rd · Orlando, Florida 32811",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=LB+McLeod+Rd%2C+Orlando%2C+FL+32811",
+    pricingUrl: "https://prozapfl.com/#pricing",
+    socials: [
+      { label: "Instagram", url: "https://www.instagram.com/prozap25/", network: "instagram" },
+      { label: "TikTok", url: "https://www.tiktok.com/@prozap42", network: "tiktok" },
+      { label: "Facebook", url: "https://www.facebook.com/prozap25", network: "facebook" }
+    ]
+  },
   "fvm-pricing": {
     kind: "pricing",
     slug: "fvm-pricing",
