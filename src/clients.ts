@@ -39,7 +39,7 @@ export const clients: Record<string, ClientProfile> = {
     phone: "+14076862539",
     location: "4378 L B McLeod Rd · Orlando, Florida 32811",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=ProZap+Mobile+EV+Charging%2C+4378+L+B+McLeod+Rd%2C+Orlando%2C+FL+32811",
-    pricingUrl: "https://prozapfl.com/#pricing",
+    pricingUrl: "https://prozapfl.com/pricing",
     socials: [
       { label: "Instagram", url: "https://www.instagram.com/prozap25/", network: "instagram" },
       { label: "TikTok", url: "https://www.tiktok.com/@prozap42", network: "tiktok" },
