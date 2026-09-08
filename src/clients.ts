@@ -34,16 +34,16 @@ export const clients: Record<string, ClientProfile> = {
     logo: "/assets/prozap-logo.webp",
     logoAlt: "ProZap Mobile EV Charging",
     colors: { primary: "#c8ff00", secondary: "#76a900", glow: "200, 255, 0", surface: "#050705" },
-    reviewUrl: "https://www.google.com/maps/search/?api=1&query=ProZap+Mobile+EV+Charging%2C+4378+L+B+McLeod+Rd%2C+Orlando%2C+FL+32811",
-    website: "https://prozapfl.com",
+    reviewUrl: "https://g.page/r/CZTY1IFB5ansECE/review",
+    website: "https://prozapev.com",
     phone: "+14076862539",
     location: "4378 L B McLeod Rd · Orlando, Florida 32811",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=ProZap+Mobile+EV+Charging%2C+4378+L+B+McLeod+Rd%2C+Orlando%2C+FL+32811",
-    pricingUrl: "https://prozapfl.com/pricing",
+    pricingUrl: "https://prozapev.com/pricing",
     socials: [
       { label: "Instagram", url: "https://www.instagram.com/prozap25/", network: "instagram" },
       { label: "TikTok", url: "https://www.tiktok.com/@prozap42", network: "tiktok" },
-      { label: "Facebook", url: "https://www.facebook.com/prozap25", network: "facebook" }
+      { label: "Facebook", url: "https://www.facebook.com/61590135404264/", network: "facebook" }
     ]
   },
   "fvm-pricing": {
