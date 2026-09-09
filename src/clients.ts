@@ -20,6 +20,7 @@ export type ClientProfile = {
   mapUrl?: string;
   email?: string;
   pricingUrl?: string;
+  backupContacts?: { name: string; phone: string; displayPhone: string }[];
   socials?: { label: string; url: string; network: "instagram" | "tiktok" | "facebook" }[];
 };
 
@@ -37,6 +38,10 @@ export const clients: Record<string, ClientProfile> = {
     reviewUrl: "https://g.page/r/CZTY1IFB5ansECE/review",
     website: "https://prozapev.com",
     phone: "+14076862539",
+    backupContacts: [
+      { name: "Rico", phone: "+14079610379", displayPhone: "407-961-0379" },
+      { name: "Kason", phone: "+13159552765", displayPhone: "315-955-2765" }
+    ],
     location: "4378 L B McLeod Rd · Orlando, Florida 32811",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=ProZap+Mobile+EV+Charging%2C+4378+L+B+McLeod+Rd%2C+Orlando%2C+FL+32811",
     pricingUrl: "https://prozapev.com/pricing",
