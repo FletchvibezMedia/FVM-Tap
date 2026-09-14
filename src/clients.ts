@@ -1,5 +1,5 @@
 export type ClientProfile = {
-  kind?: "review" | "services" | "pricing" | "hub";
+  kind?: "review" | "services" | "pricing" | "hub" | "barber";
   slug: string;
   businessName: string;
   eyebrow: string;
@@ -25,6 +25,25 @@ export type ClientProfile = {
 };
 
 export const clients: Record<string, ClientProfile> = {
+  "cooch-the-barber": {
+    kind: "barber",
+    slug: "cooch-the-barber",
+    businessName: "Cooch the Barber",
+    eyebrow: "Jesus · Orlando Barber",
+    headline: "Cooch the Barber",
+    message: "Fresh cuts. Sharp details. Clean finish.",
+    logo: "/assets/cooch-the-barber.webp",
+    logoAlt: "Cooch the Barber logo featuring an illustrated portrait of Jesus",
+    colors: { primary: "#176849", secondary: "#bd3537", glow: "211, 171, 93", surface: "#101211" },
+    reviewUrl: "#demo",
+    phone: "+14079139811",
+    location: "Orlando, Florida",
+    demo: true,
+    socials: [
+      { label: "Instagram", url: "#demo", network: "instagram" },
+      { label: "TikTok", url: "#demo", network: "tiktok" }
+    ]
+  },
   prozap: {
     kind: "hub",
     slug: "prozap",
