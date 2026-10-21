@@ -6,6 +6,8 @@ Mobile-first branded landing pages for FletchVibez Media NFC and QR products.
 
 Customer pages use `/{slug}`. Customer profiles are managed in `src/clients.ts`.
 
+The FletchVibez Media NFC contact card is available at `/fvm-contact`.
+
 ## Cloudflare
 
 - Build command: `npm run check`
