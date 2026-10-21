@@ -1,5 +1,5 @@
 export type ClientProfile = {
-  kind?: "review" | "services" | "pricing" | "hub" | "barber";
+  kind?: "review" | "services" | "pricing" | "profile" | "hub" | "barber";
   slug: string;
   businessName: string;
   eyebrow: string;
@@ -22,9 +22,31 @@ export type ClientProfile = {
   pricingUrl?: string;
   backupContacts?: { name: string; phone: string; displayPhone: string }[];
   socials?: { label: string; url: string; network: "instagram" | "tiktok" | "facebook" }[];
+  firstName?: string;
+  lastName?: string;
+  title?: string;
 };
 
 export const clients: Record<string, ClientProfile> = {
+  "fvm-contact": {
+    kind: "profile",
+    slug: "fvm-contact",
+    businessName: "FletchVibez Media",
+    firstName: "Eric",
+    lastName: "Fletcher",
+    title: "Founder",
+    eyebrow: "FletchVibez Media · Orlando, Florida",
+    headline: "Eric Fletcher",
+    message: "Branding, websites, smart products and creative media that help businesses look memorable and connect faster.",
+    logo: "",
+    logoAlt: "FletchVibez Media",
+    colors: { primary: "#14b8ff", secondary: "#0879bd", glow: "20, 184, 255", surface: "#000000" },
+    reviewUrl: "#",
+    website: "https://fletchvibezmedia.com",
+    phone: "+14075697939",
+    email: "Eric@FletchVibezMedia.com",
+    location: "Orlando, Florida"
+  },
   "cooch-the-barber": {
     kind: "barber",
     slug: "cooch-the-barber",
