@@ -1,5 +1,7 @@
 import { clients } from "./clients";
 
+// NFC contact profiles and their route data are served from this Worker.
+
 interface Env { ASSETS: Fetcher }
 
 const securityHeaders = {
